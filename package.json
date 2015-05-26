@@ -1,0 +1,21 @@
+{
+  "name": "ethergit.guests.count",
+  "description": "Ethergit guests count plugin",
+  "version": "0.0.1",
+  "author": "",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "plugins": {
+    "guests_count": {}
+  },
+  "categories": ["miscellaneous"],
+  "licenses": []
+}
