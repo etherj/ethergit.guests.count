@@ -19,10 +19,12 @@ define(function(require, exports, module) {
                 layout.getElement('barExtras'),
                 new ui.label({
                     id: 'guestCount',
-                    caption: '0'
+                    caption: '0',
+                    class: 'guest-count'
                 }),
-                600, plugin
+                601, plugin
             );
+            ui.insertCss(require('text!./style.css'), false, plugin);
             setInterval(update, 10000);
         }
 

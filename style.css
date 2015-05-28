@@ -1,0 +1,9 @@
+.guest-count:before {
+    content: "";
+    background: url("/static/plugins/ethergit.guests.count/guest.png") no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 2px;
+}
