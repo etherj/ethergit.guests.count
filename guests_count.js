@@ -20,11 +20,13 @@ define(function(require, exports, module) {
                 new ui.label({
                     id: 'guestCount',
                     caption: '0',
-                    class: 'guest-count'
+                    class: 'guest-count',
+                    tooltip: 'Guests number'
                 }),
                 601, plugin
             );
             ui.insertCss(require('text!./style.css'), false, plugin);
+            update();
             setInterval(update, 10000);
         }
 
