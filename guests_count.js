@@ -17,7 +17,6 @@ define(function(require, exports, module) {
         var label;
         
         function load() {
-            hideAccountIcon();
             label = ui.insertByIndex(
                 layout.getElement('barExtras'),
                 new ui.label({
@@ -33,15 +32,6 @@ define(function(require, exports, module) {
             setInterval(update, 10000);
         }
 
-        function hideAccountIcon() {
-            info.getUser(function(err, user) {
-                if (err) return console.error(err);
-                if (user.id >= 1000000) {
-                    menus.remove('user_' + user.id);
-                }
-            });
-        }
-        
         function update() {
             api.collab.get('guest-count', function(err, data) {
                 if (err) return console.error(err);
