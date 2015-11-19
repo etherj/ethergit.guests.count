@@ -25,7 +25,7 @@ define(function(require, exports, module) {
                     class: 'guest-count',
                     tooltip: 'Guests number'
                 }),
-                601, plugin
+                650, plugin
             );
             ui.insertCss(require('text!./style.css'), false, plugin);
             update();
